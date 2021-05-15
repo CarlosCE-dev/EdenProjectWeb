@@ -1,5 +1,10 @@
 <template>
-    <v-app-bar fixed dense flat class="pa-0">
+    <v-app-bar fixed dense flat app class="pa-0">
+
+        <v-btn icon class="button--mobile ml-1" @click="showDrawer">
+            <v-icon>mdi-dots-vertical</v-icon>
+        </v-btn>
+
         <AppMenuList class="menu-list--desktop"/>
         <vue-scroll :ops="scrollOptions" class="menu-list--tablet"> <AppMenuList/> </vue-scroll>
     </v-app-bar>
@@ -19,19 +24,33 @@
                     size: "7px",
                 },
             }
-        })
+        }),
+        methods: {
+            showDrawer() {
+                this.$emit("toggleDrawer");
+            }
+        },
     }
 </script>
 
 <style lang="scss" scoped>
-
- .menu-list--tablet {
-     display: none !important;
- }
- @media screen and (max-width: "1364px") {
+.menu-list--tablet {
+    display: none !important;
+}
+.button--mobile {
+    display: none;
+}
+@media screen and (max-width: "1364px") {
     .menu-list--tablet {
         display: block !important;
     }
-    $toolbar-content-padding-x: 0px;
+}
+@media screen and (max-width: "425px") {
+    .button--mobile {
+        display: block;
+    }
+    .menu-list--tablet {
+        display: none !important;
+    }
 }
 </style>
