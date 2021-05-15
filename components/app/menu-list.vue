@@ -17,14 +17,14 @@
 <style lang="scss" scoped>
 .appbar__buttons {
     width: 100%;
+    height: 100%;
+    position: absolute;
+    text-overflow: ellipsis;
 }
 .appbar__image {
     top: -10px;
     position: relative;
     width: 150px;
-}
-.appbar__buttons v-btn {
-    margin-bottom: auto;
 }
 .appbar__logo {
     position: absolute;

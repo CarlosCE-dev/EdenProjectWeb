@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar fixed dense flat>
+    <v-app-bar fixed dense flat class="pa-0">
         <AppMenuList class="menu-list--desktop"/>
         <vue-scroll :ops="scrollOptions" class="menu-list--tablet"> <AppMenuList/> </vue-scroll>
     </v-app-bar>
@@ -24,6 +24,7 @@
 </script>
 
 <style lang="scss" scoped>
+
  .menu-list--tablet {
      display: none !important;
  }
@@ -31,5 +32,6 @@
     .menu-list--tablet {
         display: block !important;
     }
+    $toolbar-content-padding-x: 0px;
 }
 </style>
