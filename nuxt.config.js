@@ -22,8 +22,19 @@ export default {
   css: [
   ],
 
+  /*
+  ** Style Resources
+  */
+  styleResources: {
+    scss: [
+      'assets/scss/main.scss',
+      'assets/scss/color.scss',
+    ]
+  },
+
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/vue-scroll'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -39,6 +50,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/style-resources',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -46,7 +58,6 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: false,
       themes: {
