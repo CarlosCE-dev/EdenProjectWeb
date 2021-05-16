@@ -1,13 +1,18 @@
 <template>
-  <v-app class="content">
+  <v-app>
 
     <AppSideBar v-model="drawer"/>
     
     <AppBar @toggleDrawer="drawerController"/>
 
-    <v-main class="mx-md-4 mx-2 pb-4 content">
-        <nuxt/>
-    </v-main>
+    <div class="background_image">
+        <v-main class="app__content">
+            <AppSpacer/>
+            <v-card class="mx-md-4 mx-2 pb-4">
+                <nuxt/>
+            </v-card>
+        </v-main>
+    </div>
 
   </v-app>
 </template>
@@ -36,4 +41,18 @@ export default {
 
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.app__content {
+    overflow-y:auto;
+    height: 100%;
+}
+.background_image {  
+    height: 100%;
+    width: 100%;
+    background: url('~assets/images/background.jpg');
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-clip: border-box;
+}
+</style>
