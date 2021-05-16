@@ -4,7 +4,7 @@
         <v-btn small text plain color="red" class="mx-md-4">Download</v-btn>
         <v-btn small text plain color="red" class="mx-md-4">Social Network</v-btn>
         <v-btn small text plain color="red" class="mx-md-4">Register</v-btn>
-        <div class="appbar__image mx-md-4">
+        <div class="appbar__image mx-md-2">
             <img src="~/assets/images/logo.png" class="appbar__logo" alt="eden-eternal-logo">
         </div>
         <v-btn small text plain color="red" class="mx-md-4">Home to play</v-btn>
@@ -16,10 +16,8 @@
 
 <style lang="scss" scoped>
 .appbar__buttons {
-    width: 100%;
     height: 100%;
     position: absolute;
-    text-overflow: ellipsis;
 }
 .appbar__image {
     top: -10px;

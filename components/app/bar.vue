@@ -5,8 +5,11 @@
             <v-icon>mdi-dots-vertical</v-icon>
         </v-btn>
 
-        <AppMenuList class="menu-list--desktop"/>
-        <vue-scroll :ops="scrollOptions" class="menu-list--tablet"> <AppMenuList/> </vue-scroll>
+        <div class="d-flex align-center app__list">
+            <AppMenuList class="menu-list--desktop"/>
+            <vue-scroll :ops="scrollOptions" class="menu-list--tablet"> <AppMenuList/> </vue-scroll>
+        </div>
+
     </v-app-bar>
 </template>
 
@@ -19,7 +22,7 @@
                     opacity: 0.7,
                     step: 180,
                     mousedownStep: 30,
-                    minSize: 0.7,
+                    minSize: 0.3,
                     background: '#c1c1c1',
                     size: "7px",
                 },
@@ -34,6 +37,11 @@
 </script>
 
 <style lang="scss" scoped>
+.app__list {
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
 .menu-list--tablet {
     display: none !important;
 }

@@ -26,9 +26,7 @@
             background-color="white"
             required
             ></v-text-field>
-            <div class="px-4 d-flex align-top">
-                captcha image
-            </div>
+            <img src="~/assets/images/captcha.jpg" class="ml-4 form__captcha" alt="eden-eternal-logo">
         </div>
         <v-btn :disabled="!valid"
             color="success"
@@ -63,6 +61,12 @@ export default {
 <style lang="scss" scoped>
 .form__spacer {
     display: block;
+    height: 40px;
+}
+.form__captcha {
+    border-radius: 4px;
+    border: 1px solid #9E9E9E;
+    width: auto;
     height: 40px;
 }
 </style>
