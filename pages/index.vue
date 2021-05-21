@@ -1,16 +1,18 @@
 <template>
     <v-container fluid>
         <v-row no-gutters>
-            <v-col cols="12" md="4" lg="3" class="d-flex flex-column">
+            <v-col cols="12" md="4" lg="3">
                 <HomeDownloadButton class="mb-4"/>
                 <HomeLoginCard/>
             </v-col>
-            <v-col cols="6" md="4" lg="6" class="mx-md-8">
-                <HomeTips/>
-                <HomeNewsList class="py-4"/>
+            <v-col cols="12" md="4" lg="7">
+                <div class="mx-md-8">
+                    <HomeTips class="mt-4 mt-md-0"/>
+                    <HomeNewsList class="py-4"/>
+                </div>
             </v-col>
-            <v-col cols="3" md="4" lg="3">
-
+            <v-col cols="12" md="4" lg="2">
+                <HomeInformation/>
             </v-col>
         </v-row>
     </v-container>
