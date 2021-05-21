@@ -5,8 +5,9 @@
                 <HomeDownloadButton class="mb-4"/>
                 <HomeLoginCard/>
             </v-col>
-            <v-col cols="6" md="4" lg="6">
-
+            <v-col cols="6" md="4" lg="6" class="mx-md-8">
+                <HomeTips/>
+                <HomeNewsList class="py-4"/>
             </v-col>
             <v-col cols="3" md="4" lg="3">
 
