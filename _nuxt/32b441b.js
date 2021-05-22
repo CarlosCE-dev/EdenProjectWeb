@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{276:function(e,n,t){"use strict";t.r(n);var r={},c=t(11),component=Object(c.a)(r,(function(){var e=this,n=e.$createElement;return(e._self._c||n)("v-card",{attrs:{color:"grey lighten-3 pa-2"}},[e._v("\n    Tip # 1\n")])}),[],!1,null,"75485e10",null);n.default=component.exports}}]);
