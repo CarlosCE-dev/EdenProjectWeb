@@ -1,6 +1,8 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+  target: 'static',
+  router: { base: '/EdenProjectWeb/' },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - eden-project-web',
@@ -60,7 +62,7 @@ export default {
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/scss/variables.scss'],
-    treeShake: true,
+    treeShake: false,
     theme: {
       dark: false,
       themes: {
