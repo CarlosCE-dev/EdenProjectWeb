@@ -5,15 +5,18 @@
             <span class="white--text">{{ new Date().toDateString() }}</span>
         </v-system-bar>
         <v-card-title>
-            News# 1 
+            {{ news.title }}
         </v-card-title>
+        <v-card-text>
+            {{ news.description }}
+        </v-card-text>
     </v-card>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+    props: ['news']
+}
 </script>
 
 <style lang="scss" scoped>
