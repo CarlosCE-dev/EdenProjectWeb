@@ -35,13 +35,13 @@ export default {
     data: () => ({
         items: [
             { name: 'Home', route: "/", icon: 'mdi-home' },
-            { name: 'Download',  route: "/admin", icon: 'mdi-download' }, 
-            { name: 'Social Network',  route: "/admin", icon: 'mdi-share-variant' }, 
-            { name: 'Register',  route: "/admin", icon: 'mdi-account-plus' },
-            { name: 'Home to play',  route: "/admin", icon: 'mdi-information' },
-            { name: 'Rules',  route: "/admin", icon: 'mdi-format-list-bulleted' },
-            { name: 'Ranking',  route: "/admin", icon: 'mdi-chevron-triple-up' },
-            { name: 'Language',  route: "/admin", icon: 'mdi-translate' },
+            { name: 'Download',  route: "/", icon: 'mdi-download' }, 
+            { name: 'Social Network',  route: "/", icon: 'mdi-share-variant' }, 
+            { name: 'Register',  route: "/", icon: 'mdi-account-plus' },
+            { name: 'Home to play',  route: "/", icon: 'mdi-information' },
+            { name: 'Rules',  route: "/", icon: 'mdi-format-list-bulleted' },
+            { name: 'Ranking',  route: "/", icon: 'mdi-chevron-triple-up' },
+            { name: 'Language',  route: "/", icon: 'mdi-translate' },
         ],
     }),
     computed: {
